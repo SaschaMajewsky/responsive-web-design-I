@@ -1,3 +1,319 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39');
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+.main {
+	margin-top: 100px;
+	/* margin: 0px; */
+	display: flex;
+	flex-direction: column;
+	margin: 50px;
+	border: 1px solid red;
+
+}
+
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	border: 1px solid red;
+}
+
+.container nav a {
+	color: grey;
+	text-decoration: none;
+	margin: 35px;
+	border: 1px solid red;
+}
+
+.container nav a:hover {
+	text-decoration: underline;
+}
+
+
+nav {
+	display: flex;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	width: 60%;
+	height: 6%;
+	align-items: center;
+	background-color: greenyellow;
+	border: 1px solid red;
+}
+
+nav a:hover {
+	background: orange;
+	color: black;
+	border: 1px solid red;
+}
+
+header {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	border: 1px solid red;
+}
+
+
+
+.top-content {
+	/* margin: 0px; */
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	border: 1px solid red;
+}
+
+.top-content div {
+	margin: 20px;
+	box-sizing: border-box;
+	border: 1px solid red;
+}
+
+.middle-img {
+	margin-left: 20px;
+	margin-right: auto;
+	width: 96%;
+	border: 1px solid red;
+}
+
+.bottom-content {
+	display: flex;
+	margin: 20px;
+	border: 1px solid red;
+}
+
+p {
+	line-height: 1.25;
+	margin: 20px 0;
+	border: 1px solid red;
+}
+
+
+h1 {
+	font-family: "Pacifico";
+	font-size: 70px;
+	text-align: center;
+	margin-top: 100px;
+	border: 1px solid red;
+}
+
+h2 {
+	text-align: left;
+	border: 1px solid red;
+}
+
+button {
+	font-size: 20px;
+	border: 1px solid grey;
+	/* I can't change the font of the submit button */
+	font-family: 'Libre Barcode 39';
+	padding: 5px 40px 5px 40px;
+	margin-left: 70px;
+	border: 1px solid red;
+}
+
+button:hover {
+	background-color: orange;
+}
+
+
+hr {
+	margin-top: 50px;
+	width: 96%;
+	border: 1px solid red;
+}
+
+#hr-bottom {
+	margin-top: 20px;
+	margin-bottom: 40px;
+	border: 1px solid red;
+}
+
+address {
+	font-family: "Audiowide";
+	border: 1px solid red;
+}
+
+.address-section {
+	display: flex;
+	justify-content: flex-start;
+	margin: 20px;
+	border: 1px solid red;
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 100px;
+	margin-top: 50px;
+	border: 1px solid red;
+}
 
