@@ -157,163 +157,93 @@ h5 {
 }
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
-@import url('https://fonts.googleapis.com/css?family=Pacifico');
-@import url('https://fonts.googleapis.com/css?family=Audiowide');
-@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39');
-
-*,
-*:before,
-*:after {
-	box-sizing: inherit;
-}
-
-.main {
-	margin-top: 100px;
-	/* margin: 0px; */
-	display: flex;
-	flex-direction: column;
-	margin: 50px;
-	border: 1px solid red;
-
-}
 
 .container {
-	width: 1000px;
+	width: 1024px;
 	margin: 0 auto;
-	border: 1px solid red;
 }
 
-.container nav a {
-	color: grey;
-	text-decoration: none;
-	margin: 35px;
-	border: 1px solid red;
+div {
+	margin: auto 38px;
 }
-
-.container nav a:hover {
-	text-decoration: underline;
-}
-
 
 nav {
 	display: flex;
-	overflow: hidden;
-	position: fixed;
-	top: 0;
-	width: 60%;
-	height: 6%;
-	align-items: center;
-	background-color: greenyellow;
-	border: 1px solid red;
+	margin: 18px 35px;
 }
 
-nav a:hover {
+.navBar {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav a {
+	text-decoration: none;
+	color: grey;
+}
+
+.navBar a:hover {
+	text-decoration: underline;
 	background: orange;
-	color: black;
-	border: 1px solid red;
 }
-
-header {
-	margin-top: 10px;
-	display: flex;
-	justify-content: center;
-	align-items: flex-end;
-	border: 1px solid red;
-}
-
-
-
-.top-content {
-	/* margin: 0px; */
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	border: 1px solid red;
-}
-
-.top-content div {
-	margin: 20px;
-	box-sizing: border-box;
-	border: 1px solid red;
-}
-
-.middle-img {
-	margin-left: 20px;
-	margin-right: auto;
-	width: 96%;
-	border: 1px solid red;
-}
-
-.bottom-content {
-	display: flex;
-	margin: 20px;
-	border: 1px solid red;
-}
-
-p {
-	line-height: 1.25;
-	margin: 20px 0;
-	border: 1px solid red;
-}
-
 
 h1 {
-	font-family: "Pacifico";
-	font-size: 70px;
 	text-align: center;
-	margin-top: 100px;
-	border: 1px solid red;
 }
 
-h2 {
-	text-align: left;
-	border: 1px solid red;
+.header {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 25px;
+	margin-bottom: 20px;
+	padding-bottom: 55px;
+	border-bottom: 2px solid black;
+}
+
+.headerLeft {
+	font-size: 75px;
+	margin-top: 45px;
+}
+
+.content {
+	display: flex;
+}
+
+.contentSection {
+	display: flex;
+	flex-direction: column;
+	padding-right: 28px;
+	margin: 20px 0;
+}
+
+form {
+	display: flex;
 }
 
 button {
-	font-size: 20px;
-	border: 1px solid grey;
-	/* I can't change the font of the submit button */
-	font-family: 'Libre Barcode 39';
-	padding: 5px 40px 5px 40px;
-	margin-left: 70px;
-	border: 1px solid red;
+	margin-left: 100px;
+	background: white;
+	border: 1px solid black;
+	padding: 0 18px;
 }
 
 button:hover {
-	background-color: orange;
+	background: orange;
 }
 
-
-hr {
-	margin-top: 50px;
-	width: 96%;
-	border: 1px solid red;
-}
-
-#hr-bottom {
-	margin-top: 20px;
-	margin-bottom: 40px;
-	border: 1px solid red;
-}
-
-address {
-	font-family: "Audiowide";
-	border: 1px solid red;
-}
-
-.address-section {
-	display: flex;
-	justify-content: flex-start;
-	margin: 20px;
-	border: 1px solid red;
+.middle-img {
+	margin: 28px 0;
+	width: 100%;
 }
 
 footer {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 100px;
-	margin-top: 50px;
-	border: 1px solid red;
-}
-
+	padding-top: 25px;
+	margin: auto 38px;
+	border-top: 2px solid black;
+  }
+  
+.legal {
+	text-align: center;
+	margin: 25px auto;
+  }
