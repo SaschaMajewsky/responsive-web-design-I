@@ -1,3 +1,322 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+
+.container {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+div {
+	margin: auto 38px;
+}
+
+nav {
+	display: flex;
+	margin: 18px 35px;
+}
+
+.navBar {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.nav a {
+	text-decoration: none;
+	color: grey;
+}
+
+.navBar a:hover {
+	text-decoration: underline;
+	background: orange;
+}
+
+h1 {
+	text-align: center;
+}
+
+.header {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 25px;
+	margin-bottom: 20px;
+	padding-bottom: 55px;
+	border-bottom: 2px solid black;
+}
+
+.headerLeft {
+	font-size: 75px;
+	margin-top: 45px;
+}
+
+.content {
+	display: flex;
+}
+
+.contentSection {
+	display: flex;
+	flex-direction: column;
+	padding-right: 28px;
+	margin: 20px 0;
+}
+
+form {
+	display: flex;
+}
+
+button {
+	margin-left: 100px;
+	background: white;
+	border: 1px solid black;
+	padding: 0 18px;
+}
+
+button:hover {
+	background: orange;
+}
+
+.middle-img {
+	margin: 28px 0;
+	width: 100%;
+}
+
+footer {
+	padding-top: 25px;
+	margin: auto 38px;
+	border-top: 2px solid black;
+}
+
+.legal {
+	text-align: center;
+	margin: 25px auto;
+}
 
 
+/* Media Query for Breakpoints */
+
+/* Tablet View*/
+@media (max-width: 768px) {
+
+	.container {
+		width: 100%;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.navBar {
+		margin: 30px 0;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	button {
+		padding: 5px 30px 5px 30px;
+		margin-left: 90px;
+	}
+
+	.headerRight {
+		display: none;
+	}
+}
+
+/* Mobile View*/
+@media (max-width: 500px) {
+
+	.content {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		margin: 0;
+	}
+
+	.navBar {
+		margin: 10px 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.header {
+		margin-top: 5px;
+	}
+
+	.headerLeft {
+		margin-top: 5px;
+	}
+
+	.navBar a {
+		width: 100%;
+		text-align: center;
+		border: 1px solid gray;
+		border-left: none;
+		border-right: none;
+		padding-top: 15px !important;
+		padding-bottom: 15px !important;
+	}
+}
